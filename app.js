@@ -16,6 +16,6 @@
 
   server.listen(3000);
 
-  console.log("Server started on %d port in %s mode", server.address().port, app.settings.env);
+  console.log("Server started on %d port in %s mode...", server.address().port, app.settings.env);
 
 }).call(this);
