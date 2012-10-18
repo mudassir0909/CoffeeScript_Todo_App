@@ -7,13 +7,13 @@ require("#{__dirname}/src/configuration")
 
 #Setting up the Database
 require("#{__dirname}/src/models/database")
+
+#Requiring the todo model & Controller
 require("#{__dirname}/src/models/todo")
+require("#{__dirname}/src/controllers/todos_controller")
 
 #setting up routing for the Home Page
 require("#{__dirname}/src/controllers/home_controller")
-
-#API to handle requests for the todo resource
-require("#{__dirname}/src/controllers/todos_controller")
 
 #Initializing the application
 server.listen(3000)
