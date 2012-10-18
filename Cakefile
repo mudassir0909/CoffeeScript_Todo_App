@@ -12,3 +12,6 @@ task 'build', 'Should build the application by converting required coffee files 
 	exec 'coffee --compile src/configuration.coffee', (err, stdout, stderr) ->
 		throw err if err?
 		console.log "Compiled configuration.coffee.."
+	exec 'coffee --compile assets/jquery/', (err, stdout, stderr) ->
+		throw err if err?
+		console.log "Compiled jquery folder.."
