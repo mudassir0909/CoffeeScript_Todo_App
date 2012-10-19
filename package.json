@@ -1,0 +1,12 @@
+{
+  "name": "Todo-App",
+  "description": "Todo application on node, mongo while frontend being underscorejs & jquery",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies":{
+    "express": "3.x",
+    "ejs": "0.6.1",
+    "mongoose": "2.4.7",
+    "connect-assets": "2.1.6"
+ }
+}
