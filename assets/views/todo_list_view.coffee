@@ -1,7 +1,6 @@
 class @TodoListView extends Backbone.View
 	el: "#todos"
 	initialize: ->
-		@template = _.template(Templates.list_item_template)
 		@collection.bind("reset", @render)
 		@collection.fetch()
 		@collection.bind("add", @renderAdded)
@@ -9,7 +8,7 @@ class @TodoListView extends Backbone.View
 
 	render: =>
 		@collection.forEach (todo) =>
-			$(@el).append("<li>#{@template(todo.toJSON())}</li>")
+			$(@el).append(new TodoListItemView(model: todo).el)
 
 	renderAdded: (todo)=>
-		$("#new_todo").after("<li>#{@template(todo.toJSON())}</li>")
+		$("#new_todo").after(new TodoListItemView(model: todo).el)

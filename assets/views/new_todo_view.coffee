@@ -16,6 +16,10 @@ class @NewTodoView extends Backbone.View
 		model.save {title: @$('.todo_title').val()},
 			success: =>
 				@collection.add(model)
+				if confirm "Did you just add this todo to test the app or u serious in implementing it :-O ??"
+					alert "Never Mind expected this from you..."
+				else
+					alert "u got to be kidding..."
 			error: (model, error) =>
 				if error.responseText?
 					error = JSON.parse(error.responseText)

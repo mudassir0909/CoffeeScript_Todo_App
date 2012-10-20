@@ -7,3 +7,6 @@ class @Todo extends Backbone.Model
 		return u
 	isNew: ->
 		!@get("_id")?
+	validate: (attrs) ->
+		if !attrs.title? or attrs.title.trim() is ""
+			return message: "Title cannot be blank !"
