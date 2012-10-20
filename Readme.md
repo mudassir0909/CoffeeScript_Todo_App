@@ -7,4 +7,4 @@
 
 *Completed App:*<br>
 **Traditional Way:** in Master Branch<br>
-**Using Backbone JS:** in status/finished_the_app_using_backbone branch [link](https://github.com/mudassir0909/CoffeeScript_Todo_App/edit/status/finished_the_app_using_backbone)
+**Using Backbone JS:** in status/finished_the_app_using_backbone branch [link](https://github.com/mudassir0909/CoffeeScript_Todo_App/tree/status/finished_the_app_using_backbone)
